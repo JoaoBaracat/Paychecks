@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Paychecks.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Paychecks.Api.Controllers.EmployeeController.GetEmployeeByIdAsync(System.Guid)">
+            <summary>
+            Get a employee
+            </summary>
+            <param name="id">The id of the employee</param>
+            <returns>An ActionResult of type ResposnseEmployeeQuery</returns>
+            <response code="404">Employee not found</response>
+        </member>
+        <member name="M:Paychecks.Api.Controllers.EmployeeController.CreateEmployeeAsync(Paychecks.Api.Models.Employee.CreateEmployeeCommand)">
+            <summary>
+            Create an employee
+            </summary>
+            <returns>An ActionResult of type ResponseEmployeeQuery</returns>
+            <response code="400">The command object did not pass the validation</response>
+        </member>
+    </members>
+</doc>

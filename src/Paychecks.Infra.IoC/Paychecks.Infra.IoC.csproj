@@ -4,4 +4,10 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Paychecks.App\Paychecks.App.csproj" />
+    <ProjectReference Include="..\Paychecks.Domain\Paychecks.Domain.csproj" />
+    <ProjectReference Include="..\Paychecks.Infra.Data\Paychecks.Infra.Data.csproj" />
+  </ItemGroup>
+
 </Project>
